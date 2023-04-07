@@ -1,0 +1,42 @@
+{
+  "name": "@rs/button",
+  "description": "ui components",
+  "keywords": [
+    "turborepo",
+    "ui",
+    "components",
+    "tailwind css",
+    "tsup"
+  ],
+  "version": "0.0.0",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist",
+    "./styles.css": "./dist/index.css"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint *.ts*",
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf node_modules && rm -rf dist"
+  },
+  "author": "rahulsingh",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.6",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.37.0",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.3.1",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3"
+  }
+}
