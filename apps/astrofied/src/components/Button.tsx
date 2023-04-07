@@ -1,4 +1,5 @@
 import { Button as BtnPkg } from '@rs/button';
+import '@rs/button/styles.css';
 
 export default function Button() {
   return (
